@@ -29,6 +29,11 @@ var input = document.querySelector('.input');
 var numberOne = localStorage.getItem('numberOne');
 var realNumberOne = numberOne;
 
+function clickPlay() {
+    var clickPlay = document.getElementById("click-audio");
+    clickPlay.play();
+}
+
 number1.addEventListener('click', function() {
     input.textContent += '1';
     if(clickedPlus === true) 
